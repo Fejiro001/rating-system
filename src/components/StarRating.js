@@ -28,7 +28,7 @@ function StarRating(props) {
         {ratings.map((rate) => (
           <li key={rate.index}>
             <Star
-              activeIndex={activeIndex === rate.index}
+              activeIndex={activeIndex === rate.index || rate.index < activeIndex}
               isHovered={isHovered}
               onHover={() => handleButtonHover(rate.index)}
               handleRating={handleRating}
