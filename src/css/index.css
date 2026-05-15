@@ -45,6 +45,14 @@ h2 {
   font-size: 5rem;
 }
 
+.star {
+  transition: all 0.2s ease-in-out;
+}
+
+.star:hover {
+  transform: scale(1.15);
+}
+
 .fill-star {
   fill: #ffee00;
 }
@@ -63,7 +71,6 @@ h2 {
   font-weight: 700;
 }
 
-.star,
 .open-dialog,
 .close-dialog {
   transition: all 0.3s ease-out;

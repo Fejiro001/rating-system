@@ -1,5 +1,5 @@
 import { FaX } from "react-icons/fa6";
-import image from "../media/dialog-image.jpg";
+import image from "../media/images/dialog-image.jpg";
 
 function Dialog(props) {
   const { isDialogOpen, closeDialog } = props;
