@@ -23,6 +23,10 @@ function StarRating() {
     setIsHovered(true);
   };
 
+  const handleButtonNotHovered = () => {
+    setActiveIndex(clickedStar);
+  };
+
   return (
     <section>
       <h1>Rate Our Product</h1>
@@ -33,6 +37,7 @@ function StarRating() {
               isHovered={isHovered}
               activeIndex={activeIndex === rate.index || rate.index < activeIndex}
               onHover={() => handleButtonHover(rate.index)}
+              onLeave={handleButtonNotHovered}
               handleRating={() => handleRating(rate.index)}
             />
           </li>

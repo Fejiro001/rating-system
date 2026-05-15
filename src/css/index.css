@@ -41,7 +41,7 @@ h2 {
 }
 
 .star {
-  color: #515151;
+  fill: #515151;
   font-size: 5rem;
 }
 
@@ -63,6 +63,7 @@ h2 {
   font-weight: 700;
 }
 
+.star,
 .open-dialog,
 .close-dialog {
   transition: all 0.3s ease-out;
