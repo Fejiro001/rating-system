@@ -1,9 +1,11 @@
+import Dialog from "./components/Dialog";
 import StarRating from "./components/StarRating";
 
-function App() {  
+function App() {
   return (
     <main>
       <StarRating />
+      <Dialog />
     </main>
   );
 }
