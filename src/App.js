@@ -5,7 +5,8 @@ function App() {
   return (
     <main>
       <StarRating />
-      <Dialog />
+      <Dialog/>
+      <button className="open-dialog">Open Dialog</button>
     </main>
   );
 }
