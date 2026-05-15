@@ -4,17 +4,19 @@ import Star from "./Star";
 function StarRating(props) {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
-  const [isClicked, setIsClicked] = useState(false);
+  const [clickedStar, setClickedStar] = useState(null);
 
   const ratings = [
     { index: 0, rating: "Terrible" },
     { index: 1, rating: "Bad" },
-    { index: 2, rating: "Okay" },
+    { index: 2, rating: "Average" },
     { index: 3, rating: "Good" },
     { index: 4, rating: "Excellent" }
   ];
 
-  const handleRating = (e) => {};
+  const handleRating = (index) => {
+    setClickedStar(index);
+  };
 
   const handleButtonHover = (index) => {
     setActiveIndex(index);
@@ -28,15 +30,15 @@ function StarRating(props) {
         {ratings.map((rate) => (
           <li key={rate.index}>
             <Star
-              activeIndex={activeIndex === rate.index || rate.index < activeIndex}
               isHovered={isHovered}
+              activeIndex={activeIndex === rate.index || rate.index < activeIndex}
               onHover={() => handleButtonHover(rate.index)}
-              handleRating={handleRating}
+              handleRating={() => handleRating(rate.index)}
             />
           </li>
         ))}
       </ul>
-      <h2></h2>
+      <h2>{ratings[clickedStar]?.rating ?? ""}</h2>
     </section>
   );
 }

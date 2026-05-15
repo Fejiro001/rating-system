@@ -15,7 +15,13 @@ li {
 
 h1 {
   padding-bottom: 2rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
+}
+
+h2 {
+  padding-top: 1rem;
+  height: 2rem;
+  font-weight: 600;
 }
 
 .star-button {
