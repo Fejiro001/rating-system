@@ -1,1 +1,14 @@
 @import "./reset.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.fill-star {
+  fill: #ffee00;
+}
