@@ -15,11 +15,13 @@ function App() {
 
   return (
     <main>
-      <StarRating />
-      <Dialog isDialogOpen={isDialogOpen} closeDialog={closeDialog} />
-      <button className="open-dialog" onClick={openDialog}>
-        Open Dialog
-      </button>
+      <div className="container">
+        <Dialog isDialogOpen={isDialogOpen} closeDialog={closeDialog} />
+        <StarRating />
+        <button className="open-dialog" onClick={openDialog}>
+          Open Dialog
+        </button>
+      </div>
     </main>
   );
 }

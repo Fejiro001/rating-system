@@ -9,6 +9,11 @@ body {
   color: #fff;
 }
 
+.container {
+  max-width: min(100% - 30px, 1240px);
+  margin-inline: auto;
+}
+
 li {
   list-style: none;
 }
@@ -63,16 +68,27 @@ h2 {
   background-color: rgb(124, 17, 170);
 }
 
-dialog {
+.dialog-container {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.dialog {
   background-color: #fff;
   overflow: hidden;
+  margin: 1rem;
+  padding: 1rem;
   border-radius: 1rem;
-  margin-inline: 2rem;
-  padding: 2rem;
-  height: 30rem;
+  max-height: 50rem;
   max-width: 50rem;
 }
 
 img {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }

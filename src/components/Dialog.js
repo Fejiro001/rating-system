@@ -5,12 +5,14 @@ function Dialog(props) {
   const { isDialogOpen, closeDialog } = props;
 
   return (
-    <dialog open={isDialogOpen}>
-      <button className="close-dialog" onClick={closeDialog}>
-        <FaX />
-      </button>
-      <img src={image} alt="A lone sailboat reflected in a perfectly still, star-filled lake under the Milky Way." />
-    </dialog>
+    <div className={`dialog-container ${isDialogOpen ? "" : "hide"}`}>
+      <div className="dialog" open={isDialogOpen}>
+        <button className="close-dialog" onClick={closeDialog}>
+          <FaX />
+        </button>
+        <img src={image} alt="A lone sailboat reflected in a perfectly still, star-filled lake under the Milky Way." />
+      </div>
+    </div>
   );
 }
 

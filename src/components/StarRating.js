@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Star from "./Star";
 
-function StarRating(props) {
+function StarRating() {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
   const [clickedStar, setClickedStar] = useState(null);
