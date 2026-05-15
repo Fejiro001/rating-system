@@ -1,11 +1,11 @@
 import { FaStar } from "react-icons/fa6";
 
 function Star(props) {
-  const { onHover, handleRating } = props;
+  const { activeIndex, isHovered, onHover, handleRating } = props;
 
   return (
     <button className="star-button" onClick={handleRating} onMouseEnter={onHover}>
-      <FaStar className="star" />
+      <FaStar className={`star ${isHovered && activeIndex ? "fill-star" : ""}`} />
     </button>
   );
 }

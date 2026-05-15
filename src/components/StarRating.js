@@ -2,6 +2,7 @@ import { useState } from "react";
 import Star from "./Star";
 
 function StarRating(props) {
+  const [activeIndex, setActiveIndex] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
 
@@ -13,11 +14,12 @@ function StarRating(props) {
     { index: 4, rating: "Excellent" }
   ];
 
-  const handleRating = (e) => {
-    console.log(e.target);
-  };
+  const handleRating = (e) => {};
 
-  const handleButtonHover = () => {};
+  const handleButtonHover = (index) => {
+    setActiveIndex(index);
+    setIsHovered(true);
+  };
 
   return (
     <section>
@@ -25,7 +27,12 @@ function StarRating(props) {
       <ul className="star-list">
         {ratings.map((rate) => (
           <li key={rate.index}>
-            <Star isHovered={isHovered} onHover={handleButtonHover} handleRating={handleRating} />
+            <Star
+              activeIndex={activeIndex === rate.index}
+              isHovered={isHovered}
+              onHover={() => handleButtonHover(rate.index)}
+              handleRating={handleRating}
+            />
           </li>
         ))}
       </ul>
