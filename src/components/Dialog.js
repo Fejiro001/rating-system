@@ -5,7 +5,7 @@ function Dialog(props) {
   const { isDialogOpen, closeDialog } = props;
 
   return (
-    <div className={`dialog-container ${isDialogOpen ? "" : "hide"}`}>
+    <div onClick={closeDialog} className={`dialog-container ${isDialogOpen ? "" : "hide"}`}>
       <div className="dialog" open={isDialogOpen}>
         <button className="close-dialog" onClick={closeDialog} title="Close dialog">
           <FaX />

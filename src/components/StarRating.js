@@ -12,7 +12,7 @@ const ratings = [
 
 const popSound = new Audio(audio);
 popSound.type = "audio/wav";
-popSound.volume = 0.4;
+popSound.volume = 0.5;
 
 function StarRating() {
   const [activeIndex, setActiveIndex] = useState(null);
