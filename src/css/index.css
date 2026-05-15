@@ -5,17 +5,13 @@ body {
   flex-direction: column;
   place-content: center;
   text-align: center;
-  background-color: #000;
-  color: #fff;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .container {
   max-width: min(100% - 30px, 1240px);
   margin-inline: auto;
-}
-
-li {
-  list-style: none;
 }
 
 h1 {
@@ -35,13 +31,13 @@ h2 {
 
 .star-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  place-content: center;
   gap: 1rem;
+  list-style: none;
 }
 
 .star {
-  fill: #515151;
+  fill: rgb(81, 81, 81);
   font-size: 5rem;
 }
 
@@ -54,7 +50,7 @@ h2 {
 }
 
 .fill-star {
-  fill: #ffee00;
+  fill: rgb(255, 238, 0);
 }
 
 /* DIALOG */
@@ -63,7 +59,6 @@ h2 {
   bottom: 30px;
   right: 30px;
   background-color: rgb(133, 13, 185);
-  color: #fff;
   width: 20rem;
   padding: 1rem;
   border-radius: 99px;
@@ -74,6 +69,7 @@ h2 {
 .open-dialog,
 .close-dialog {
   transition: all 0.3s ease-out;
+  color: rgb(255, 255, 255);
 }
 
 .open-dialog:hover {
@@ -86,15 +82,13 @@ h2 {
   right: -15px;
   margin-bottom: 2rem;
   margin-left: auto;
-  background-color: #dc0d0d;
-  color: #fff;
+  background-color: rgb(220, 13, 13);
   padding: 1rem;
   border-radius: 50%;
-  font-weight: 900;
 }
 
 .close-dialog:hover {
-  background-color: #ab0000;
+  background-color: rgb(171, 0, 0);
 }
 
 .dialog-container {
@@ -105,6 +99,7 @@ h2 {
   place-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
+  cursor: pointer;
 }
 
 .hide {
@@ -113,15 +108,15 @@ h2 {
 
 .dialog {
   position: relative;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   margin: 1rem 2rem;
   padding: 1rem;
-  border-radius: 1rem;
   max-height: 60rem;
   max-width: 60rem;
   animation: show-dialog 0.3s ease-in-out;
 }
 
+.dialog,
 img {
   border-radius: 1rem;
 }
