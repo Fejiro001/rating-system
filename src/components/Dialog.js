@@ -7,7 +7,7 @@ function Dialog(props) {
   return (
     <div className={`dialog-container ${isDialogOpen ? "" : "hide"}`}>
       <div className="dialog" open={isDialogOpen}>
-        <button className="close-dialog" onClick={closeDialog}>
+        <button className="close-dialog" onClick={closeDialog} title="Close dialog">
           <FaX />
         </button>
         <img src={image} alt="A lone sailboat reflected in a perfectly still, star-filled lake under the Milky Way." />
