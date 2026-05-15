@@ -20,13 +20,17 @@ function StarRating(props) {
   const handleButtonHover = () => {};
 
   return (
-    <>
-      <h1>Rate our Product</h1>
-      {ratings.map((rate) => (
-        <Star isHovered={isHovered} onHover={handleButtonHover} handleRating={handleRating} key={rate.index} />
-      ))}
-      <h2>Good</h2>
-    </>
+    <section>
+      <h1>Rate Our Product</h1>
+      <ul className="star-list">
+        {ratings.map((rate) => (
+          <li key={rate.index}>
+            <Star isHovered={isHovered} onHover={handleButtonHover} handleRating={handleRating} />
+          </li>
+        ))}
+      </ul>
+      <h2></h2>
+    </section>
   );
 }
 

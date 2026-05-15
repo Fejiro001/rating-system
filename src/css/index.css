@@ -9,6 +9,31 @@ body {
   color: #fff;
 }
 
+li {
+  list-style: none;
+}
+
+h1 {
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.star-button {
+  background-color: transparent;
+}
+
+.star-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.star {
+  color: #515151;
+  font-size: 5rem;
+}
+
 .fill-star {
   fill: #ffee00;
 }

@@ -2,9 +2,9 @@ import StarRating from "./components/StarRating";
 
 function App() {  
   return (
-    <>
+    <main>
       <StarRating />
-    </>
+    </main>
   );
 }
 
