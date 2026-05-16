@@ -16,7 +16,6 @@ popSound.volume = 0.5;
 
 function StarRating() {
   const [activeIndex, setActiveIndex] = useState(null);
-  const [isHovered, setIsHovered] = useState(false);
   const [clickedStar, setClickedStar] = useState(null);
 
   const handleRating = (index) => {
@@ -26,7 +25,6 @@ function StarRating() {
 
   const handleOnHover = (index) => {
     setActiveIndex(index);
-    setIsHovered(true);
   };
 
   const handleNotHovered = () => {
@@ -40,7 +38,6 @@ function StarRating() {
         {ratings.map((rate) => (
           <li key={rate.index}>
             <Star
-              isHovered={isHovered}
               activeIndex={activeIndex === rate.index || rate.index < activeIndex}
               onHover={() => handleOnHover(rate.index)}
               onLeave={handleNotHovered}
