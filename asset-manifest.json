@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.193a4aba.css",
-    "main.js": "/react-gh-pages/static/js/main.0c8febbf.js",
-    "static/media/dialog-image.jpg": "/react-gh-pages/static/media/dialog-image.0c3bed8b73573992dd9d.jpg",
-    "static/media/bubble-pop.wav": "/react-gh-pages/static/media/bubble-pop.68eaba69de83b48ffcfe.wav",
-    "index.html": "/react-gh-pages/index.html",
-    "main.193a4aba.css.map": "/react-gh-pages/static/css/main.193a4aba.css.map",
-    "main.0c8febbf.js.map": "/react-gh-pages/static/js/main.0c8febbf.js.map"
+    "main.css": "/rating-system/static/css/main.193a4aba.css",
+    "main.js": "/rating-system/static/js/main.961ce599.js",
+    "static/media/dialog-image.jpg": "/rating-system/static/media/dialog-image.0c3bed8b73573992dd9d.jpg",
+    "static/media/bubble-pop.wav": "/rating-system/static/media/bubble-pop.68eaba69de83b48ffcfe.wav",
+    "index.html": "/rating-system/index.html",
+    "main.193a4aba.css.map": "/rating-system/static/css/main.193a4aba.css.map",
+    "main.961ce599.js.map": "/rating-system/static/js/main.961ce599.js.map"
   },
   "entrypoints": [
     "static/css/main.193a4aba.css",
-    "static/js/main.0c8febbf.js"
+    "static/js/main.961ce599.js"
   ]
 }
