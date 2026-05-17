@@ -10,18 +10,21 @@ const ratings = [
   { index: 4, rating: "Excellent" }
 ];
 
-// Extra: pop sound on clicking the stars
-const popSound = new Audio(audio);
-popSound.type = "audio/wav";
-
 function StarRating() {
   const [activeIndex, setActiveIndex] = useState(null);
   const [clickedStar, setClickedStar] = useState(null);
 
+  // Extra: pop sound on clicking the stars
+  const playPop = (volume) => {
+    const popSound = new Audio(audio);
+    popSound.type = "audio/wav";
+    popSound.volume = volume;
+    popSound.play();
+  };
+
   const handleRating = (index) => {
     // Pop sound depends on index of star
-    popSound.volume = (index + 1) / ratings.length;
-    popSound.play();
+    playPop((index + 1) / ratings.length);
     setClickedStar(index);
   };
 
@@ -40,7 +43,7 @@ function StarRating() {
         {ratings.map((rate) => (
           <li key={rate.index}>
             <Star
-              activeIndex={activeIndex === rate.index || rate.index < activeIndex}
+              activeIndex={activeIndex !== null && (rate.index === activeIndex || rate.index < activeIndex)}
               onHover={() => handleStarPreview(rate.index)}
               onLeave={handleClearPreview}
               handleRating={() => handleRating(rate.index)}
