@@ -45,7 +45,8 @@ h2 {
   transition: all 0.2s ease-in-out;
 }
 
-.star:hover {
+.star:hover,
+.star:focus-within {
   transform: scale(1.15);
 }
 
@@ -72,7 +73,8 @@ h2 {
   color: rgb(255, 255, 255);
 }
 
-.open-dialog:hover {
+.open-dialog:hover,
+.open-dialog:focus {
   background-color: rgb(89, 0, 126);
 }
 

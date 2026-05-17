@@ -10,15 +10,17 @@ const ratings = [
   { index: 4, rating: "Excellent" }
 ];
 
+// Extra: pop sound on clicking the stars
 const popSound = new Audio(audio);
 popSound.type = "audio/wav";
-popSound.volume = 0.5;
 
 function StarRating() {
   const [activeIndex, setActiveIndex] = useState(null);
   const [clickedStar, setClickedStar] = useState(null);
 
   const handleRating = (index) => {
+    // Pop sound depends on index of star
+    popSound.volume = (index + 1) / ratings.length;
     popSound.play();
     setClickedStar(index);
   };
