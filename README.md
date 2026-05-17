@@ -10,7 +10,7 @@ The project was developed as part of a React front-end assignment and focuses on
 
 ## Features
 
-- Interactive five-star rating system
+- Interactive five-star rating system with hover preview and selection feedback
 - Dynamic rendering using React `.map()`
 - Rating feedback text based on selected stars
 - Reusable React components
@@ -18,6 +18,7 @@ The project was developed as part of a React front-end assignment and focuses on
 - State management using `useState`
 - Responsive and clean UI design
 - Smooth hover effects and transitions
+- Audio feedback on star selection (dynamic volume scaling)
 - Semantic and accessible JSX structure
 
 ## Technologies Used
