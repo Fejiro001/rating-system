@@ -25,11 +25,11 @@ function StarRating() {
     setClickedStar(index);
   };
 
-  const handleOnHover = (index) => {
+  const handleStarPreview = (index) => {
     setActiveIndex(index);
   };
 
-  const handleNotHovered = () => {
+  const handleClearPreview = () => {
     setActiveIndex(clickedStar);
   };
 
@@ -41,8 +41,8 @@ function StarRating() {
           <li key={rate.index}>
             <Star
               activeIndex={activeIndex === rate.index || rate.index < activeIndex}
-              onHover={() => handleOnHover(rate.index)}
-              onLeave={handleNotHovered}
+              onHover={() => handleStarPreview(rate.index)}
+              onLeave={handleClearPreview}
               handleRating={() => handleRating(rate.index)}
             />
           </li>
