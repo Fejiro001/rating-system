@@ -67,4 +67,4 @@ const handleNotHovered = () => {
 
 ## Demo
 
-Click [here]() to demo
+Click [here](https://fejiro001.github.io/rating-system/) to demo
